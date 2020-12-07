@@ -6,7 +6,7 @@
 - Highest positive score
 
 ## Natural Language
-- Produce ngrams
+- Tokenizer
 - Top 10 words (each coin)
 - Word Cloud (each coin)
 
