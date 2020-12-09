@@ -43,11 +43,10 @@ In this project, the latest news articles of Bitcoin and Ethereum are analyzed v
 
 ### Section 2- Tokenization
 - A tokenizer master function is defined that removes the stopwords, non- alpha numeric characters, lemmatizes the news text and transforms the news text to lowercase.
-- The news text column of Bitcoin and Ethereum are passed to the master function to perform the above tasks.
-- The resulting list is converted to a DataFrame and merged with the respective sentiment scores dataframe.
+- The news text column of Bitcoin and Ethereum are passed to the master function to perform the above tasks and subsequently added to the respective sentiment scores dataframe.
 
 ### Section 3- Ngrams, WordCloud
-- A list containing the tokenized words for Bitcoin and Ethereum are created. All the content is transformed to a string.
+- Tokenized lists containing the news article text for Bitcoin and Ethereum are created. All the content is transformed to a string.
 - The top 10 bigrams and their freqency are determined and subsequently converted to a Dataframe.
 - The WordCloud plot for Bitcoin and Ethereum are generated.
 
@@ -57,13 +56,13 @@ In this project, the latest news articles of Bitcoin and Ethereum are analyzed v
 - The entity names are listed.
 
 ## Difficulties encountered
-This was the assignment which had the most amount of 'Googling'.
-- Tokenizing the words in bitcoin_df['Text'] via a for-loop.
-- Each word in the tokenized list was getting converted to a new row and column. Using list (zip...) fixed the problem.
+This was the assignment for which I did the most amount of 'Googling'.
+- Tokenizing the words in bitcoin_df['Text'] via a for-loop. A much simpler way of passing the tokenier function was taught by Khaled.
+- Each word in the tokenized list was getting converted to a new row and column. Using list (zip...) fixed the problem. This was later found to be redundant.
 - Concatenating all the news article text into a single object. With ','.join (map (str...), the obstacle was overcome.
 
 ## Conclusion/ My thoughts
-- There is apparently no comparison involved in this project and it lacks an appreciable amount of quantitative analysis. Thus, I am unable to reach a conclusion on the task performed.
+- There is negligible amount of comparison involved in this project and it lacks a significant amount of quantitative analysis. Thus, I am unable to reach a conclusion on the task performed.
 - In addition to the text analysis, another element about correlating the sentiment with the Bitcoin and Ethereum prices could have also been assigned. In my opinion, that would have been the appropriate 'Fintech' focused challenge.
 
 ## Contributors
